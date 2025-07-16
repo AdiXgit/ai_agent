@@ -10,6 +10,6 @@ This AI Agent performs automatic deep web research on any topic, extracting and 
 
 ## Example
 <img width="1001" height="1169" alt="image" src="https://github.com/user-attachments/assets/a6017e24-0c60-4747-af85-e7778354941b" />
- -and the final summary 
+ 
  <img width="1059" height="703" alt="image" src="https://github.com/user-attachments/assets/8c53eabc-05f5-432f-a4b1-3f3e1383e1db" />
 
