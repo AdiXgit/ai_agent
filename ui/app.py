@@ -10,7 +10,7 @@ from tools.summarise_tool import summarise_article
 from utils.relevance_filter import filter_relevant_text
 from memory.vector_store import get_vector
 
-st.title("🧠 AutoResearch Agent")
+st.title("AutoResearch Agent")
 query = st.text_input("Enter your research topic")
 
 if st.button("Run Agent") and query:
@@ -24,7 +24,7 @@ if st.button("Run Agent") and query:
             continue
 
         relevance = filter_relevant_text(text, query)
-        st.write(f"📌 Relevance Check: {relevance}")
+        st.write(f"Relevance Check: {relevance}")
         if "yes" not in relevance.lower():
             continue
 
@@ -33,7 +33,7 @@ if st.button("Run Agent") and query:
         summaries.append(summary)
 
     if summaries:
-        st.subheader("🧠 Final Synthesis")
+        st.subheader("Final Synthesis")
         all_summaries = "\n".join(summaries)
         final_summary = summarise_article(all_summaries)
         st.markdown(final_summary)
